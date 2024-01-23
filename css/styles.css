@@ -8,14 +8,14 @@
     padding: 0;
     margin: 0;
     font-family: oswald;
-    background-color: #1f2023;
     color: #e0e0e0;
 }
 
 /* GENERAL */
 /* HEADER */
 body {
-    background-color: #1f2023;
+    background-image: url(./../images/background-img.jpg);
+    background-size: cover;
 }
 .header-bar {
     position: sticky;
@@ -62,7 +62,7 @@ body {
     background-image: url(./../images/hamburger-menu.svg);
 }
 
-footer {
+.container-footer {
     text-align: center;
     border-top: #ffa726 solid 1px;
     margin-top: 10px;
@@ -191,12 +191,11 @@ footer {
 main h1 {
     text-align: center;
     font-weight: bold;
-    color: #ffa82665;
+    color: #e0e0e0;
     text-decoration: underline;
 }
 
 .grid-container {
-    background-color: #1f2023;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -205,6 +204,9 @@ main h1 {
     padding: 25px;
 }
 
+.history-card {
+    background-color: #1f2023;
+}
 .history-header {
     display: flex;
     justify-content: center;
@@ -226,7 +228,7 @@ main h1 {
 
 .history-body p {
     color: lightslategray;
-    font-size: 2vh;
+    font-size: 3vh;
 }
 
 .history-body h2 {
@@ -261,6 +263,12 @@ main h1 {
     height: auto;
 }
 
+.work-card {
+    background-color: #1f2023;
+    border: #ffa726 1px solid;
+    padding: 25px;
+}
+
 .work-card h2 {
     font-size: 20px;
     text-align: center;
@@ -276,6 +284,33 @@ main h1 {
     color: #1f2023;
     border-right: 1px solid black;
 }
+
+/* Works Page */
+#work-title {
+    text-align: center;
+    text-decoration: underline;
+    color: #e0e0e0;
+    font-size: 35px;
+}
+
+.works-card {
+    background-color: #1f2023;
+    border: #ffb74d 1px solid;
+}
+
+.work-card-header img{
+    padding: 25px;
+}
+
+.card-title {
+    color: #ffb74d;
+}
+
+.work-tech {
+    font-size: 25px;
+    padding: 15px;
+}
+
 /* Contact Page */
 .formcontainer {
     display: flex;
