@@ -312,6 +312,18 @@ main h1 {
     padding: 15px;
 }
 
+.btn-primary {
+    background-color: #ffa726;
+    color: #1f2023;
+    border: black 1px solid;
+}
+
+.btn-primary:hover {
+    background-color: #ffa620c7;
+    color: #1f2023;
+    border: rgba(0, 0, 0, 0.671) solid 1px;
+}
+
 /* Contact Page */
 .formcontainer {
     display: flex;
