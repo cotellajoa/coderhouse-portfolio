@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: oswald;
     src: url(./../oswald/Oswald-Medium.ttf);
 }
@@ -176,7 +176,7 @@ footer {
  .modal-footer {
     background-color: #1f2023;
     border-top: 1px solid #ffa726;
- }
+ } */
 /* HISTORY PAGE */
 #main-history {
     margin: 0px;
@@ -387,7 +387,7 @@ main h1 {
         width: 80%;
     }
 
-    #contenedor-img {
+    .contenedor-img {
         display: flex;
         justify-content: center;
         align-items: center;

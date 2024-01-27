@@ -1,0 +1,30 @@
+/* MAIN CONTACT */
+
+.main-contact {
+    .formcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;  
+        .mb-3 {
+            width: 60%;
+            .form-label {
+                color: black;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        } 
+        .col-auto {
+            .btn-submit {
+                background-color: #ffa726;
+                border: 1px solid black; 
+                color: #1f2023;  
+                &:hover {
+                    background-color: #ffa826d2;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+}

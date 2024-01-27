@@ -1,0 +1,46 @@
+/* MAIN WORKS*/
+.main-works {
+    #work-title {
+        text-align: center;
+        text-decoration: underline;
+        color: #e0e0e0;
+        font-size: 35px;
+    }
+    .swiffy-slider {
+        ul {
+            li {
+                .works-card {
+                    background-color: #1f2023;
+                    border: #ffb74d 1px solid;
+                    .work-card-header {
+                        img {
+                            padding: 25px;
+                        }
+                    }
+                    .card-body {
+                        .card-title {
+                            color: #ffb74d;
+                        }
+                        .work-tech {
+                            font-size: 25px;
+                            padding: 15px;   
+                            color: #e0e0e0; 
+                        }
+                        .div-btn-works {
+                            a {
+                                background-color: #ffa726;
+                                color: #1f2023;
+                                border: black 1px solid;   
+                                &:hover {
+                                    background-color: #ffa620c7;
+                                    color: #1f2023;
+                                    border: rgba(0, 0, 0, 0.671) solid 1px;    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+/* MAIN SKILLS*/
+
+.main-skills {
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap:  20px;
+        row-gap: 15px;
+        padding: 25px;
+        margin: 20px 0 40px 0;
+        .skills-card {
+            background-color: #1f2023;
+            border: #ffa726 1px solid;
+            padding: 25px;
+            .header-scard {
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 200px;
+                    height: auto; 
+                }
+            }
+            h2 {
+                font-size: 20px;
+                text-align: center;
+                text-decoration: underline;
+            }
+            .progress {
+                background-color: #9e9e9ef6;
+                border: 1px solid black;
+                .progress-bar {
+                    background-color: #ffa726;
+                    color: #1f2023;
+                    border-right: 1px solid black;
+                }
+            }
+
+        }
+    }
+}
