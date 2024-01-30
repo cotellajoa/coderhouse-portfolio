@@ -1,7 +1,12 @@
 /* RESET */
 @font-face {
     font-family: oswald;
-    src: url(./../oswald/Oswald-Medium.ttf);
+    src: url(./../../fonts/oswald/Oswald-Medium.ttf);
+}
+
+@font-face {
+    font-family: utendo;
+    src: url(./../../fonts/utendo/Utendo-ExtraBold.ttf);
 }
 
 * {

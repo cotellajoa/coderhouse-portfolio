@@ -14,6 +14,12 @@ body {
 h1 {
     text-align: center;
     font-weight: bold;
-    color: #e0e0e0;
-    text-decoration: underline;
+    font-family: utendo;
+    /** TEXT GRADIENT */
+    color: #e6623d;
+    background-image: -webkit-linear-gradient(0deg, #e6623d 3%, #8bc007 98%, #e6504a 36%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
 }
