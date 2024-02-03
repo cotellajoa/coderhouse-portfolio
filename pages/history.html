@@ -8,11 +8,13 @@
     <link rel="icon" href="./../images/logo.png">
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- AOS Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS Styles Link w/SASS -->
     <link rel="stylesheet" href="./../css/main.css">
 
 </head>
-<body>
+<body class="body-history">
     <!-- Barra de navegacion -->
     <header class="header-bar">
         <nav class="navbar navbar-expand-lg bg-nav">
@@ -43,65 +45,80 @@
           </div>
         </nav>
     </header>
+
     <main class="main-history">
-        <h1>Academic</h1>
-        <section class="history-container">
-          <div class="grid-container">
-            <div class="history-card">
-              <div class="history-header">
-                  <img src="./../images/history-logos/college.png" alt="college image">
-              </div>
-              <div class="history-body">
-                  <h2>College</h2>
-                  <h3>2013-2019</h3>
-                  <p class="card-description">
-                      High school in Cordoba
-                  </p>
-              </div>
-            </div>
-
-            <div class="history-card">
-              <div class="history-header">
-                  <img src="./../images/history-logos/idioms.png" alt="idioms photo">
-              </div>
-              <div class="history-body">
-                  <h2>English Course</h2>
-                  <h3>2022</h3>
-                  <p class="card-description">
-                      Intermediate English Course in CoderHouse
-                  </p>
+        <h1 class="spaceInUp">History</h1>
+        <section class="timeline-section">
+          <div class="timeline-items">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2013-2019</div>
+              <div class="timeline-content fth-left">
+                <h3>Collegue</h3>
+                <p>Bachelor's degree in Economics</p>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 448 512">
+                  <path d="M 0 56 Q 1 32 16 16 L 16 16 Q 32 1 56 0 L 408 0 Q 425 0 436 12 Q 448 23 448 40 L 448 376 Q 446 407 416 415 L 416 496 L 440 496 Q 447 497 448 504 Q 447 511 440 512 L 56 512 Q 32 511 16 496 Q 1 480 0 456 L 0 56 L 0 56 Z M 56 416 Q 39 416 28 428 L 28 428 Q 16 439 16 456 Q 16 473 28 484 Q 39 496 56 496 L 400 496 L 400 416 L 56 416 L 56 416 Z M 16 417 Q 32 401 56 400 L 112 400 L 112 16 L 56 16 Q 39 16 28 28 Q 16 39 16 56 L 16 417 L 16 417 Z M 128 16 L 128 400 L 408 400 Q 430 398 432 376 L 432 40 Q 430 18 408 16 L 128 16 L 128 16 Z M 176 136 Q 177 129 184 128 L 376 128 Q 383 129 384 136 Q 383 143 376 144 L 184 144 Q 177 143 176 136 L 176 136 Z M 176 216 Q 177 209 184 208 L 376 208 Q 383 209 384 216 Q 383 223 376 224 L 184 224 Q 177 223 176 216 L 176 216 Z" />
+                </svg>
               </div>
             </div>
-
-            <div class="history-card">
-              <div class="history-header">
-                  <img src="./../images/history-logos/coderhouse.png" alt="code representation image">
-              </div>
-              <div class="history-body">
-                  <h2>Web Developer</h2>
-                  <h3>In progress</h3>
-                  <p class="card-description">
-                      Web Developing in Coderhouse
-                  </p>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2020</div>
+              <div class="timeline-content fth-right">
+                <h3>C++ Course</h3>
+                <p>First impression of programming.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 624 514">
+                  <path d="M 403 2 Q 396 0 393 6 L 217 502 Q 215 510 221 513 Q 229 514 232 508 L 408 12 Q 409 5 403 2 L 403 2 Z M 474 124 Q 470 129 475 135 L 604 257 L 475 379 Q 470 385 474 391 Q 480 395 486 391 L 622 263 Q 624 260 624 257 Q 624 254 622 251 L 486 123 Q 480 119 474 123 L 474 124 Z M 150 124 Q 144 119 139 123 L 3 251 Q 0 254 0 257 Q 0 260 3 263 L 139 391 Q 144 395 150 391 Q 154 385 150 379 L 20 257 L 150 135 Q 154 129 150 124 L 150 124 Z" />
+                </svg>
               </div>
             </div>
-
-            <div class="history-card">
-              <div class="history-header">
-                  <img src="./../images/history-logos/book.png" alt="book image">
+            <div class="timeline-item" data-aos="fade-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2022</div>
+              <div class="timeline-content fth-left">
+                <h3>English Course</h3>
+                <p>Intermediate English course<br> at CoderHouse.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 448 512">
+                  <path d="M 0 56 Q 1 32 16 16 L 16 16 Q 32 1 56 0 L 408 0 Q 425 0 436 12 Q 448 23 448 40 L 448 376 Q 446 407 416 415 L 416 496 L 440 496 Q 447 497 448 504 Q 447 511 440 512 L 56 512 Q 32 511 16 496 Q 1 480 0 456 L 0 56 L 0 56 Z M 56 416 Q 39 416 28 428 L 28 428 Q 16 439 16 456 Q 16 473 28 484 Q 39 496 56 496 L 400 496 L 400 416 L 56 416 L 56 416 Z M 16 417 Q 32 401 56 400 L 408 400 Q 430 398 432 376 L 432 40 Q 430 18 408 16 L 56 16 Q 39 16 28 28 Q 16 39 16 56 L 16 417 L 16 417 Z M 247 100 L 319 244 L 319 245 L 351 308 Q 354 315 348 319 Q 341 322 337 316 L 307 256 L 173 256 L 143 316 Q 139 322 132 319 Q 126 315 129 309 L 161 245 L 161 244 L 233 101 Q 235 96 240 96 Q 245 96 247 101 L 247 100 Z M 299 240 L 240 122 L 181 240 L 299 240 L 299 240 Z" />
+                </svg>
               </div>
-              <div class="history-body">
-                  <h2>University</h2>
-                  <h3>In progress</h3>
-                  <p class="card-description">
-                    Degree in Systems Engineering
-                  </p>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2022 - NOW</div>
+              <div class="timeline-content fth-right">
+                <h3>Degree in Systems Engineering</h3>
+                <p>At the moment, I am studying at<br> the National University of Córdoba</p>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 512 514">
+                  <path d="M 264 4 Q 256 0 248 4 L 16 136 Q 1 145 0 163 Q 0 176 9 185 Q 18 194 31 194 L 256 194 L 481 194 Q 494 194 503 185 Q 512 176 512 163 Q 511 145 496 136 L 264 4 L 264 4 Z M 307 162 Q 312 151 312 138 Q 311 114 296 98 Q 280 83 256 82 Q 232 83 216 98 Q 201 114 200 138 Q 200 151 205 162 L 34 162 L 256 36 L 478 162 L 307 162 L 307 162 Z M 256 114 Q 278 116 280 138 Q 278 160 256 162 Q 234 160 232 138 Q 234 116 256 114 L 256 114 Z M 64 354 Q 49 355 48 370 Q 49 385 64 386 L 448 386 Q 463 385 464 370 Q 463 355 448 354 L 448 226 L 416 226 L 416 354 L 336 354 L 336 226 L 304 226 L 304 354 L 208 354 L 208 226 L 176 226 L 176 354 L 96 354 L 96 226 L 64 226 L 64 354 L 64 354 Z M 40 418 Q 25 419 24 434 Q 25 449 40 450 L 472 450 Q 487 449 488 434 Q 487 419 472 418 L 40 418 L 40 418 Z M 16 482 Q 1 483 0 498 Q 1 513 16 514 L 496 514 Q 511 513 512 498 Q 511 483 496 482 L 16 482 L 16 482 Z" />
+                </svg>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2023</div>
+              <div class="timeline-content fth-left">
+                <h3>Web Developer</h3>
+                <p>Initial Web Developer course<br> at CoderHouse</p>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 494 512">
+                  <path d="M 203 29 Q 206 17 218 16 L 276 16 Q 288 17 291 29 L 304 86 Q 305 90 309 91 Q 336 102 358 120 Q 362 122 366 121 L 422 104 Q 434 101 440 111 L 469 161 Q 475 172 466 181 L 423 221 Q 420 224 421 228 Q 423 242 423 256 Q 423 271 421 285 Q 420 289 423 292 L 466 332 Q 475 340 469 351 L 440 401 Q 434 411 422 408 L 366 391 Q 362 390 358 392 Q 336 410 309 421 Q 305 422 304 426 L 291 484 Q 288 495 276 496 L 218 496 Q 206 495 203 484 L 190 426 Q 189 422 185 421 Q 158 410 136 392 Q 132 390 128 391 L 72 408 Q 60 411 54 401 L 25 351 Q 19 340 28 331 L 71 291 Q 74 288 73 284 Q 71 271 71 256 Q 71 241 73 228 Q 74 223 71 220 L 28 181 Q 19 172 25 161 L 54 111 Q 60 101 72 104 L 128 121 Q 132 122 136 120 Q 158 102 185 91 Q 189 90 190 86 L 203 29 L 203 29 Z M 218 0 Q 194 2 187 25 L 175 78 Q 150 88 129 105 L 77 89 Q 53 83 40 103 L 11 153 Q 0 175 17 193 L 57 229 Q 55 242 55 256 Q 55 270 57 283 L 17 320 Q 0 337 11 359 L 40 409 Q 53 429 77 424 L 129 407 Q 150 424 175 434 L 187 487 Q 194 511 218 512 L 276 512 Q 300 511 307 487 L 319 434 Q 344 424 365 407 L 417 424 Q 441 429 454 409 L 483 359 Q 494 337 477 320 L 437 283 Q 439 270 439 256 Q 439 242 437 229 L 477 193 Q 494 175 483 153 L 454 103 Q 441 83 417 88 L 365 105 Q 344 88 319 78 L 307 25 Q 300 2 276 0 L 218 0 L 218 0 Z M 271 161 Q 271 154 264 152 Q 257 152 255 159 L 223 351 Q 223 358 230 360 Q 237 360 239 353 L 271 161 L 271 161 Z M 173 222 Q 177 216 173 210 Q 167 206 161 210 L 121 250 Q 117 256 121 262 L 161 302 Q 167 306 173 302 Q 177 296 173 290 L 138 256 L 173 222 L 173 222 Z M 333 210 Q 327 206 321 210 Q 317 216 321 222 L 356 256 L 321 290 Q 317 296 321 302 Q 327 306 333 302 L 373 262 Q 377 256 373 250 L 333 210 L 333 210 Z" />
+                </svg>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2026</div>
+              <div class="timeline-content fth-right">
+                <h3>Globant Job</h3>
+                <p>Team Leader Software Engineering<br> at Globant</p>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 512 480">
+                  <path d="M 144 40 L 144 96 L 368 96 L 368 40 Q 366 18 344 16 L 168 16 Q 146 18 144 40 L 144 40 Z M 128 96 L 128 40 Q 128 23 140 12 Q 151 0 168 0 L 344 0 Q 361 0 372 12 Q 384 23 384 40 L 384 96 L 448 96 Q 475 97 493 115 Q 511 133 512 160 L 512 264 L 512 416 Q 511 443 493 461 Q 475 479 448 480 L 64 480 Q 37 479 19 461 Q 1 443 0 416 L 0 264 L 0 160 Q 1 133 19 115 Q 37 97 64 96 L 128 96 L 128 96 Z M 16 272 L 16 416 Q 17 436 30 450 Q 44 463 64 464 L 448 464 Q 468 463 482 450 Q 495 436 496 416 L 496 272 L 336 272 L 336 320 Q 336 334 327 343 Q 318 352 304 352 L 208 352 Q 194 352 185 343 Q 176 334 176 320 L 176 272 L 16 272 L 16 272 Z M 176 256 L 192 256 L 320 256 L 336 256 L 496 256 L 496 160 Q 495 140 482 126 Q 468 113 448 112 L 376 112 L 136 112 L 64 112 Q 44 113 30 126 Q 17 140 16 160 L 16 256 L 176 256 L 176 256 Z M 192 272 L 192 320 Q 193 335 208 336 L 304 336 Q 319 335 320 320 L 320 272 L 192 272 L 192 272 Z" />
+                </svg>
               </div>
             </div>
           </div>
         </section>
     </main>
-
     <!-- Pie de pagina -->
     <footer>
         <div class="container-footer">
@@ -110,5 +127,10 @@
     </footer>
     <!-- Bootstrap js script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <!-- AOS js script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

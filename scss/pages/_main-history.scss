@@ -1,46 +1,102 @@
 /* MAIN HISTORY */
-.main-history {
-    margin: 0px;
-    padding: 20px;
-    text-align: center;
-    .history-container {
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 1fr 1fr;
-            column-gap: 25px;
-            row-gap: 25px;
-            padding: 25px;
-            .history-card {
-                background-color: #1f2023;
-                border: 1px double #e0e0e0;
-                .history-header {
-                    display: flex;
-                    justify-content: center;
-                    width: 100%;
-                    height: auto;
-                    padding: 25px;
-                    border-bottom: 1px solid #e0e0e0;
-                    img {
-                        width: 50%;
-                        height: auto; 
-                    }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.body-history {
+    background: hsla(213, 77%, 14%, 1);
+    background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+    .main-history {
+        margin: 0px;
+        padding: 20px;
+        font-family: "Poppins", sans-serif;
+        h1 {
+            font-weight: bolder;
+        }
+        .timeline-section {
+            min-height: 100vh;
+            padding: 100px 15px;
+            .timeline-items {
+                max-width: 1000px;
+                margin:auto;
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: 100%;
+                    background-color: black;
+                    left: calc(50% - 1px);
                 }
-                .history-body {
-                    padding: 15px;
-                    text-align: center;
-                    h2 {
-                        color: seagreen;
-                        font-size: 4vh;
+                .timeline-item {
+                    margin-bottom: 40px;
+                    width: 100%;
+                    position: relative;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:nth-child(odd){
+                        padding-right: calc(50% + 30px);
+                        text-align: right;
+                    }
+                    &:nth-child(even){
+                        padding-left: calc(50% + 30px);
+                    }
+                    .timeline-dot {
+                        height: 16px;
+                        width: 16px;
+                        background-color: #ffa726;
+                        position: absolute;
+                        left: calc(50% - 8px);
+                        border-radius: 50%;
+                        top: 10px;
+                    }
+                    .timeline-date{
+                        font-size: 18px;
+                        color: #ffa726;
+                        margin:6px 0 15px;
                         font-weight: bold;
                     }
-                    h3 {
-                        color: rgb(71, 70, 70);
-                        font-size: 3vh;
+                    .timeline-content{
+                        @extend %bg-border;
+                        padding: 30px;
+                        border-radius: 5px;
+                        h3 {
+                            font-size: 20px;
+                            color: #e0e0e0;
+                            font-weight: bold;
+                            text-decoration: underline;
+                            margin:0 0 10px;
+                            text-transform: capitalize;
+                            font-weight: 500;
+                        }
+                        p {
+                            color: #e0e0e0;
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 22px;
+                        }
                     }
-                    p {
-                        color: lightslategray;
-                        font-size: 3vh;
+                    .fth-left {
+                        position: relative;
+                        svg {
+                            color: #e0e0e0;
+                            font-size: 50px;
+                            position: absolute;
+                            left: 7%;
+                            top: 30%;
+                        }
+                    }
+                    .fth-right {
+                        position: relative;
+                        svg {
+                            color: #e0e0e0;
+                            font-size: 50px;
+                            position: absolute;
+                            top: 30%;
+                            right: 7%;
+                        }
                     }
                 }
             }

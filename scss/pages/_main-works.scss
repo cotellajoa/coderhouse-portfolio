@@ -1,8 +1,7 @@
 /* MAIN WORKS*/
 .main-works {
     #work-title {
-        text-align: center;
-        text-decoration: underline;
+        @extend %titles;
         color: #e0e0e0;
         font-size: 35px;
     }
@@ -10,8 +9,7 @@
         ul {
             li {
                 .works-card {
-                    background-color: #1f2023;
-                    border: #ffb74d 1px solid;
+                    @extend %bg-border;
                     .work-card-header {
                         img {
                             padding: 25px;

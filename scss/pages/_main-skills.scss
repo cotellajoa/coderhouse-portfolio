@@ -16,9 +16,7 @@
             opacity: 0.88;
             .header-scard{
                 height: 170px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(nowrap, center, center, row);
                 img {
                     width: 200px;
                     height: auto; 
@@ -29,14 +27,12 @@
             }
             h2 {
                 font-size: 20px;
-                text-align: center;
-                font-weight: bold;
+                @extend %titles;
                 padding: 5px;
             }
             h3 {
                 color: grey;
-                text-align: center;
-                font-weight: bold;
+                @extend %titles;
                 font-size: 15px;
             }
         }

@@ -2,10 +2,7 @@
 
 .main-contact {
     .formcontainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex(wrap, center, center, column);
         margin-bottom: 50px;  
         .mb-3 {
             width: 60%;
