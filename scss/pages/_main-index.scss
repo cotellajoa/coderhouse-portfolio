@@ -42,8 +42,7 @@
                     color: #9e9e9ef6;
                     &:hover {
                         color: #ffa726;
-                        font-size: 31px;
-                    }
+                    }                  
                 }
             }
         }
@@ -52,20 +51,16 @@
         @include flex(wrap, center, center, row);
         padding: 40px;
         .bg-btn {
-            border: 2px solid black;
+            border: 3px solid black;
             color: #ffa726;
             background-color: #1f2023;
+            font-weight: bold;
             -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
             -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
             box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
             &:hover {
-                border: 2px solid black;
-                text-decoration: underline;
-                color: #ffa726;
-                background-color: #1f2023;
-                -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
-                box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+                color: #1f2023;
+                font-weight: bold;
             }
         }
         .modal {

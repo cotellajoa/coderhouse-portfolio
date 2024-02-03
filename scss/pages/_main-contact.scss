@@ -17,12 +17,16 @@
         } 
         .col-auto {
             .btn-submit {
-                background-color: #ffa726;
-                border: 1px solid black; 
-                color: #1f2023;  
+                background-color: #ffa826d2;
+                border: 2px solid black;
+                border-radius: 0%;
+                color: black;  
+                font-weight: bold;
                 &:hover {
-                    background-color: #ffa826d2;
-                    border: 1px solid black;
+                    border: 2px solid black;
+                    color: #1f2023;
+                    transition: all 800ms;
+                    font-weight: bold;
                 }
             }
         }
