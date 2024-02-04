@@ -1,16 +1,6 @@
 /* Media query */
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .main-history {
-        .history-container {
-            .grid-container {
-                grid-template-columns: repeat(2, 1fr);
-                column-gap: 70px;
-                row-gap: 70px;    
-            }
-        }
-    }
-
     .main-skills {
         .cards-container {
             grid-template-columns: repeat(2, 1fr);
@@ -29,9 +19,31 @@
     }
 
     .main-history {
-        .history-container {
-            .grid-container {
-                grid-template-columns: repeat(2, 1fr);  
+        .timeline {
+            &::after {
+                left: 31px;
+            }
+            .timeline-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;  
+                &::before {
+                    left: 60px;
+                    border: medium solid white;
+                    border-width: 10px 10px 10px 0;
+                    border-color: transparent white transparent transparent;   
+                }
+            }
+            .tl-left {
+                &::after {
+                    left: 15px;
+                }
+            }
+            .tl-right {
+                left: 0%;
+                &after {
+                    left: 15px;
+                }
             }
         }
     }
@@ -72,9 +84,29 @@
     }
 
     .main-history {
-        .history-container {
-            .grid-container {
-                grid-template-columns: 1fr;   
+        .timeline {
+            margin: 30px;
+            padding: 0;
+            width: 90%;  
+            &::before {
+                left: 0;
+            }
+            .timeline-item {
+                .timeline-content {
+                    float: right;
+                    text-align: left;
+                    width: 90%;
+                    &::before,
+                    &.right::before {
+                    border-left: 0;
+                    border-right: 7px solid $timeline-color;
+                    left: 10%;
+                    margin-left: -6px;
+                    }
+                }
+            }
+            .timeline-icon {
+                left: 0;
             }
         }
     }
