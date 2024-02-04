@@ -26,13 +26,16 @@
                         }
                         .div-btn-works {
                             a {
-                                background-color: #ffa726;
-                                color: #1f2023;
-                                border: black 1px solid;   
+                                background-color: #1f2023;
+                                color: #ffb74d;
+                                border: black 2px solid;  
+                                font-weight: bold;
+                                border-radius: 0; 
                                 &:hover {
-                                    background-color: #ffa620c7;
-                                    color: #1f2023;
-                                    border: rgba(0, 0, 0, 0.671) solid 1px;    
+                                    color: black;
+                                    border: black solid 2px;    
+                                    font-weight: bold;
+                                    border-radius: 0%;
                                 }
                             }
                         }
