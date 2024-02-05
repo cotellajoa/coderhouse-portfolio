@@ -45,26 +45,28 @@
     </header>
     <main class="main-contact vanishIn">
         <h1 class="spaceInUp">Contact</h1>
-        <section class="formcontainer">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Name</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name example">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Last name example">
-          </div>
-          <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary btn-submit hvr-grow hvr-ripple-in">Submit</button>
-          </div>        
+        <section>
+          <div class="form-container">
+            <div class="input-group">
+              <input required="" type="text" name="text" autocomplete="off" class="input">
+              <label class="user-label">First Name</label>
+            </div>
+            <div class="input-group">
+              <input required="" type="text" name="text" autocomplete="off" class="input">
+              <label class="user-label">Last Name</label>
+            </div>
+            <div class="input-group">
+              <input required="" type="text" name="text" autocomplete="off" class="input">
+              <label class="user-label">Email</label>
+            </div>
+            <div class="input-group">
+              <textarea class="textarea-input" rows="3"></textarea>
+              <label class="user-label">Message</label>
+            </div>
+            <button type="submit" class="submit-btn"> Submit 
+            </button>   
+          </div>  
+          
         </section>
     </main>
 

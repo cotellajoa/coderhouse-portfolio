@@ -635,34 +635,132 @@ h1 {
 }
 
 /* MAIN CONTACT */
-.main-contact .formcontainer {
+.main-contact section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+.main-contact section .form-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
+  width: 70%;
+  padding: 15px;
+  background-color: #1f2023;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.main-contact .formcontainer .mb-3 {
-  width: 60%;
-}
-.main-contact .formcontainer .mb-3 .form-label {
-  color: black;
+.main-contact section .form-container .submit-btn {
+  width: 100px;
+  text-align: center;
+  --color: #ffa726;
+  padding: 0.8em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
 }
-.main-contact .formcontainer .col-auto .btn-submit {
-  background-color: rgba(255, 168, 38, 0.8235294118);
-  border: 2px solid black;
-  border-radius: 0%;
-  color: black;
-  font-weight: bold;
+.main-contact section .form-container .submit-btn::before, .main-contact section .form-container .submit-btn::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
 }
-.main-contact .formcontainer .col-auto .btn-submit:hover {
-  border: 2px solid black;
-  color: #1f2023;
-  transition: all 800ms;
-  font-weight: bold;
+.main-contact section .form-container .submit-btn::before {
+  top: -1em;
+  left: -1em;
+}
+.main-contact section .form-container .submit-btn::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.main-contact section .form-container .submit-btn:hover {
+  filter: brightness(0.8);
+  color: rgb(10, 25, 30);
+}
+.main-contact section .form-container .submit-btn:hover::before, .main-contact section .form-container .submit-btn:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.main-contact section .form-container .input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  padding: 10px;
+}
+.main-contact section .form-container .input-group .input {
+  border: solid 1.5px #9e9e9e;
+  border-radius: 1rem;
+  width: 80%;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #f5f5f5;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-contact section .form-container .input-group .input:valid, .main-contact section .form-container .input-group .input:focus {
+  outline: none;
+  border: 1.5px solid #ffa726;
+}
+.main-contact section .form-container .input-group .input:valid ~ label, .main-contact section .form-container .input-group .input:focus ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #1f2023;
+  padding: 0 0.2em;
+  color: #ffa726;
+  font-style: italic;
+}
+.main-contact section .form-container .input-group .textarea-input {
+  border: solid 1.5px #9e9e9e;
+  border-radius: 1rem;
+  width: 80%;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #f5f5f5;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-contact section .form-container .input-group .textarea-input:valid, .main-contact section .form-container .input-group .textarea-input:focus {
+  outline: none;
+  border: 1.5px solid #ffa726;
+}
+.main-contact section .form-container .input-group .textarea-input:valid ~ label, .main-contact section .form-container .input-group .textarea-input:focus ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #1f2023;
+  padding: 0 0.2em;
+  color: #ffa726;
+  font-style: italic;
+}
+.main-contact section .form-container .input-group .user-label {
+  position: absolute;
+  left: calc(12% + 8px);
+  top: 8px;
+  color: #e8e8e8;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* FOOTER */
