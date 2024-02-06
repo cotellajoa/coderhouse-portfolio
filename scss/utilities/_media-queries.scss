@@ -1,9 +1,13 @@
 /* Media query */
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .main-skills {
-        .cards-container {
-            grid-template-columns: repeat(2, 1fr);
+    .body-skills {
+        .main-skills {
+            section {
+                .container-skills {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
         }
     }
 }
@@ -48,9 +52,13 @@
         }
     }
 
-    .main-skills {
-        .cards-container {
-            grid-template-columns: 1fr 1fr;
+    .body-skills {
+        .main-skills {
+            section {
+                .container-skills {
+                    grid-template-columns: 1fr;
+                }
+            }
         }
     }
 }
@@ -111,9 +119,13 @@
         }
     }
 
-    .main-skills {
-        .cards-container {
-            grid-template-columns: 1fr;
+    .body-skills {
+        .main-skills {
+            section {
+                .container-skills {
+                    grid-template-columns: 1fr;
+                }
+            }
         }
     }
 }

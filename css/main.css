@@ -272,8 +272,8 @@ h1 {
 .spaceInUp {
   -webkit-animation-name: spaceInUp;
   animation-name: spaceInUp;
-  animation-duration: 2s;
-  animation-delay: 50ms;
+  animation-duration: 800ms;
+  animation-delay: 10ms;
 }
 
 @-webkit-keyframes spaceInUp {
@@ -568,13 +568,10 @@ h1 {
   margin-bottom: 20px;
 }
 .body-skills .main-skills section .container-skills {
-  max-width: 1024px;
-  width: 100%;
-  padding: 50px 0 50px 0;
-  margin: 0 auto;
+  padding: 50px 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 20px;
 }
 .body-skills .main-skills section .container-skills .sCard {
   -webkit-box-shadow: -7px 7px 5px 0px rgba(0, 0, 0, 0.75);
@@ -836,8 +833,8 @@ footer .container-footer p {
 /* Media query */
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .main-skills .cards-container {
-    grid-template-columns: repeat(2, 1fr);
+  .body-skills .main-skills section .container-skills {
+    grid-template-columns: 1fr 1fr;
   }
 }
 /* mobiles */
@@ -868,8 +865,8 @@ footer .container-footer p {
   .main-history .timeline .tl-rightafter {
     left: 15px;
   }
-  .main-skills .cards-container {
-    grid-template-columns: 1fr 1fr;
+  .body-skills .main-skills section .container-skills {
+    grid-template-columns: 1fr;
   }
 }
 /* small mobiles */
@@ -907,7 +904,7 @@ footer .container-footer p {
   .main-history .timeline .timeline-icon {
     left: 0;
   }
-  .main-skills .cards-container {
+  .body-skills .main-skills section .container-skills {
     grid-template-columns: 1fr;
   }
 }
