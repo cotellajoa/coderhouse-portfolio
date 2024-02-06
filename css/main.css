@@ -464,6 +464,7 @@ h1 {
 
 .body-history {
   background: linear-gradient(to right, #1f2023, black);
+  max-width: 100%;
 }
 .body-history .main-history {
   margin: 0px;

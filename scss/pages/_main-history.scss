@@ -17,6 +17,7 @@ $timeline-item-card: false;
 }
 .body-history {
     background: linear-gradient(to right, #1f2023, black);
+    max-width: 100%;
     .main-history {
         margin: 0px;
         padding: 20px;
