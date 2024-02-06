@@ -1,38 +1,100 @@
-/* MAIN SKILLS*/
-
-.main-skills {
-    .cards-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap:  20px;
-        row-gap: 15px;
-        padding: 25px;
-        .skills-card {
-            background-color: #2A3439;
-            border: #ffa726 2px solid;
-            padding: 25px;
-            color: #fffff0;
-            border-radius: 50px;
-            .header-scard{
-                height: 170px;
-                @include flex(nowrap, center, center, row);
-                img {
-                    width: 200px;
-                    height: auto; 
+/* MAIN SKILLS */
+.body-skills {
+    background: linear-gradient(to right, #1f2023, black);
+    .main-skills {
+        margin-bottom: 20px;
+        section {
+            .container-skills {
+                max-width: 1024px;
+                width: 100%;
+                padding: 50px 0 50px 0;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 40px;
+                .sCard {
+                    -webkit-box-shadow: -7px 7px 5px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -7px 7px 5px 0px rgba(0,0,0,0.75);
+                    box-shadow: -7px 7px 5px 0px rgba(0,0,0,0.75);
+                    width: 100%;
+                    max-width: 300px;
+                    min-width: 200px;
+                    height: 250px;
+                    background-color: #292929;
+                    margin: 10px;
+                    border-radius: 10px;
+                    border: 2px solid rgba(7, 7, 7, 0.12);
+                    font-size: 16px;   
+                    transition: all 0.3s ease;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+                    transition: all 0.3s ease; 
+                    &:hover {
+                        height: 270px;
+                        .info {
+                            height: 90%;
+                        }
+                        .text {
+                            transition: all 0.3s ease;
+                            opacity: 1;
+                            max-height:40px;
+                        }
+                        .icon {
+                            background-position: -120px;
+                            transition: all 0.3s ease;
+                            svg {
+                                color: #FFa726;
+                                font-size: 25px;
+                                -webkit-text-fill-color: transparent;
+                                opacity: 1;
+                                transition: all 0.3s ease;
+                            }
+                        }
+                    }
+                    .icon {
+                        margin: 0 auto;
+                        width: 100%;
+                        height: 80px;
+                        max-width:80px;
+                        background: linear-gradient(90deg, #ffa726 0%, #915904 40%, rgba(0, 0, 0, 0.28) 60%);
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #1f2023;
+                        transition: all 0.8s ease;
+                        font-size: 25px;
+                        background-position: 0px;
+                        background-size: 200px; 
+                    }
+                    .title {
+                        width: 100%;
+                        margin: 0;
+                        text-align: center;
+                        margin-top: 30px;
+                        color: white;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 4px; 
+                    }
+                    .text {
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 13px;
+                        text-align: center;
+                        margin-top: 20px;
+                        color: white;
+                        font-weight: 200;
+                        letter-spacing: 2px;
+                        opacity: 0;
+                        max-height:0;
+                        transition: all 0.3s ease; 
+                    }
                 }
-                svg {
-                    font-size: 100px;
-                }
-            }
-            h2 {
-                font-size: 20px;
-                @extend %titles;
-                padding: 5px;
-            }
-            h3 {
-                color: grey;
-                @extend %titles;
-                font-size: 15px;
             }
         }
     }

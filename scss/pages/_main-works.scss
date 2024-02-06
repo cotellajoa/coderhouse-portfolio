@@ -1,41 +1,40 @@
 /* MAIN WORKS*/
-.main-works {
-    #work-title {
-        @extend %titles;
-        color: #e0e0e0;
-        font-size: 35px;
-    }
-    .swiffy-slider {
-        ul {
-            li {
-                .works-card {
-                    @extend %bg-border;
-                    .work-card-header {
-                        img {
-                            padding: 25px;
+.body-works {
+    background: linear-gradient(to right, #0d0d0d, #131314);
+    .main-works {
+        .swiffy-slider {
+            ul {
+                li {
+                    .works-card {
+                        @extend %bg-border;
+                        border: #ffb74d 2px solid;
+                        .work-card-header {
+                            img {
+                                padding: 25px;
+                            }
                         }
-                    }
-                    .card-body {
-                        .card-title {
-                            color: #ffb74d;
-                        }
-                        .work-tech {
-                            font-size: 25px;
-                            padding: 15px;   
-                            color: #e0e0e0; 
-                        }
-                        .div-btn-works {
-                            a {
-                                background-color: #1f2023;
+                        .card-body {
+                            .card-title {
                                 color: #ffb74d;
-                                border: black 2px solid;  
-                                font-weight: bold;
-                                border-radius: 0; 
-                                &:hover {
-                                    color: black;
-                                    border: black solid 2px;    
+                            }
+                            .work-tech {
+                                font-size: 25px;
+                                padding: 15px;   
+                                color: #e0e0e0; 
+                            }
+                            .div-btn-works {
+                                a {
+                                    background-color: #1f2023;
+                                    color: #ffb74d;
+                                    border: black 2px solid;  
                                     font-weight: bold;
-                                    border-radius: 0%;
+                                    border-radius: 0; 
+                                    &:hover {
+                                        color: black;
+                                        border: black solid 2px;    
+                                        font-weight: bold;
+                                        border-radius: 0%;
+                                    }
                                 }
                             }
                         }
