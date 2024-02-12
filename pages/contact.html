@@ -48,31 +48,32 @@
       </div>
     </nav>
   </header>
-  <main class="main-contact vanishIn">
+  <main class="main-contact">
     <section>
       <h1 class="spaceInUp">Contact</h1>
-      <div class="form-contact">
+      <form action="/enviar" class="form-contact vanishIn" method="post">
         <div class="form-container">
           <div class="input-group">
-            <input required="" type="text" name="text" autocomplete="off" class="input">
+            <input required="" type="text" name="name" autocomplete="off" class="input">
             <label class="user-label">First Name</label>
           </div>
           <div class="input-group">
-            <input required="" type="text" name="text" autocomplete="off" class="input">
+            <input required="" type="text" name="name" autocomplete="off" class="input">
             <label class="user-label">Last Name</label>
           </div>
           <div class="input-group">
-            <input required="" type="text" name="text" autocomplete="off" class="input">
+            <input required="" type="email" name="email" autocomplete="off" class="input">
             <label class="user-label">Email</label>
           </div>
-          <div class="input-group">
+          <div class="textarea-group">
             <textarea class="textarea-input" rows="3"></textarea>
-            <label class="user-label">Message</label>
+            <label class="user-label" >Message</label>
           </div>
-          <button type="submit" class="submit-btn"> Submit
+          <button type="submit" class="submit-btn">
+            Submit
           </button>
         </div>
-      </div>
+      </form>
     </section>
   </main>
 

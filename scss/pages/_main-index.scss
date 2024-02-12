@@ -1,105 +1,110 @@
 /* MAIN INDEX */
-.main-index {
-    .container-section {
-        @include flex(wrap, center, center, row);
-        .container-index {
-            margin-top: 50px;
-            @extend %bg-border;
-            @include flex(wrap, none, none, column);
-            text-align: center;
-            height: 570px;
-            width: 400px;
-            -webkit-box-shadow: 10px 10px 28px 23px rgba(0,0,0,0.66);
-            -moz-box-shadow: 10px 10px 28px 23px rgba(0,0,0,0.66);
-            box-shadow: 10px 10px 28px 23px rgba(0,0,0,0.66);
-            h2 {
-                border-top: #ffa726 1px solid;
-                padding: 5px 0px;
-                margin-bottom: 5px;
-                color: #e0e0e0;
-                font-size: 35px;    
-            }
-            h3 {
-                color: #9e9e9ef6;
-                font-size: 1rem;
-            }
-            .contenedor-img {
-                img {
-                    height: 80%;
-                    width: 80%;
-                    padding: 15px 5px;
-                    border-radius: 170px;
-                    overflow: hidden;
+.body-index {
+    background-image: url(./../assets/images/background-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .main-index {
+        .container-section {
+            @include flex(wrap, center, center, row);
+            .container-index {
+                margin-top: 50px;
+                @extend %bg-border;
+                @include flex(wrap, none, none, column);
+                text-align: center;
+                height: 570px;
+                width: 400px;
+                -webkit-box-shadow: 10px 10px 28px 23px rgba(0,0,0,0.66);
+                -moz-box-shadow: 10px 10px 28px 23px rgba(0,0,0,0.66);
+                box-shadow: 10px 10px 28px 23px rgba(0,0,0,0.66);
+                h2 {
+                    border-top: #ffa726 1px solid;
+                    padding: 5px 0px;
+                    margin-bottom: 5px;
+                    color: #e0e0e0;
+                    font-size: 35px;    
                 }
-            }
-            .redes {
-                height: 10px;
-                width: 350;
-                @include flex(wrap, space-around, none, row);
-                i {
-                    padding: 20px 0px;
-                    font-size: 30px;
+                h3 {
                     color: #9e9e9ef6;
-                    &:hover {
-                        color: #ffa726;
-                    }                  
+                    font-size: 1rem;
+                }
+                .contenedor-img {
+                    img {
+                        height: 80%;
+                        width: 80%;
+                        padding: 15px 5px;
+                        border-radius: 170px;
+                        overflow: hidden;
+                    }
+                }
+                .redes {
+                    height: 10px;
+                    width: 350;
+                    @include flex(wrap, space-around, none, row);
+                    i {
+                        padding: 20px 0px;
+                        font-size: 30px;
+                        color: #9e9e9ef6;
+                        &:hover {
+                            color: #ffa726;
+                        }                  
+                    }
                 }
             }
         }
-    }
-    .container-btn-cv {
-        @include flex(wrap, center, center, row);
-        padding: 40px;
-        .bg-btn {
-            border: 3px solid black;
-            color: #ffa726;
-            background-color: #1f2023;
-            font-weight: bold;
-            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-            &:hover {
-                color: #1f2023;
+        .container-btn-cv {
+            @include flex(wrap, center, center, row);
+            padding: 40px;
+            .bg-btn {
+                border: 3px solid black;
+                color: #ffa726;
+                background-color: #1f2023;
                 font-weight: bold;
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                &:hover {
+                    color: #1f2023;
+                    font-weight: bold;
+                }
             }
-        }
-        .modal {
-            .modal-dialog {
-                .modal-content {
-                    background-color: #1f2023;
-                    .modal-header {
-                        border-bottom: 1px solid #ffa726;
-                    }
-                    .modal-body {
-                        @include flex(nowrap, center, none, row);
-                        // display: flex;
-                        // justify-content: center;
-                        img {
-                            width: 460px;
-                        }
-                    }
-                    .modal-footer {
+            .modal {
+                .modal-dialog {
+                    .modal-content {
                         background-color: #1f2023;
-                        border-top: 1px solid #ffa726;
-                        .btn-download {
-                            border: 2px solid black;
-                            color: #ffa726;
+                        .modal-header {
+                            border-bottom: 1px solid #ffa726;
+                        }
+                        .modal-body {
+                            @include flex(nowrap, center, none, row);
+                            // display: flex;
+                            // justify-content: center;
+                            img {
+                                width: 460px;
+                            }
+                        }
+                        .modal-footer {
                             background-color: #1f2023;
-                            border-radius: 0;
-                            a {
-                                text-decoration: none;
+                            border-top: 1px solid #ffa726;
+                            .btn-download {
+                                border: 2px solid black;
                                 color: #ffa726;
-                                font-weight: 500;
-                                transition: 1s;
-                                &:visited {
-                                    color: #ffa726;
-                                }
-                                &:hover {
+                                background-color: #1f2023;
+                                border-radius: 0;
+                                a {
                                     text-decoration: none;
+                                    color: #ffa726;
                                     font-weight: 500;
-                                    color: #1f2023;
+                                    transition: 1s;
                                     &:visited {
+                                        color: #ffa726;
+                                    }
+                                    &:hover {
+                                        text-decoration: none;
+                                        font-weight: 500;
                                         color: #1f2023;
+                                        &:visited {
+                                            color: #1f2023;
+                                        }
                                     }
                                 }
                             }
