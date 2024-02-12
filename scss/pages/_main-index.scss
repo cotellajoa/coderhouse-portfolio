@@ -81,13 +81,26 @@
                     .modal-footer {
                         background-color: #1f2023;
                         border-top: 1px solid #ffa726;
-                        .download-btn {
-                            .btn-primary {
-                                background-color: #986312;
-                                border: 1px solid black;
+                        .btn-download {
+                            border: 2px solid black;
+                            color: #ffa726;
+                            background-color: #1f2023;
+                            border-radius: 0;
+                            a {
+                                text-decoration: none;
+                                color: #ffa726;
+                                font-weight: 500;
+                                transition: 1s;
+                                &:visited {
+                                    color: #ffa726;
+                                }
                                 &:hover {
-                                    background-color: #986212be;
-                                    border: 1px solid black;
+                                    text-decoration: none;
+                                    font-weight: 500;
+                                    color: #1f2023;
+                                    &:visited {
+                                        color: #1f2023;
+                                    }
                                 }
                             }
                         }

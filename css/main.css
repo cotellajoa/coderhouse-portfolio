@@ -445,13 +445,28 @@ h1 {
   background-color: #1f2023;
   border-top: 1px solid #ffa726;
 }
-.main-index .container-btn-cv .modal .modal-dialog .modal-content .modal-footer .download-btn .btn-primary {
-  background-color: #986312;
-  border: 1px solid black;
+.main-index .container-btn-cv .modal .modal-dialog .modal-content .modal-footer .btn-download {
+  border: 2px solid black;
+  color: #ffa726;
+  background-color: #1f2023;
+  border-radius: 0;
 }
-.main-index .container-btn-cv .modal .modal-dialog .modal-content .modal-footer .download-btn .btn-primary:hover {
-  background-color: rgba(152, 98, 18, 0.7450980392);
-  border: 1px solid black;
+.main-index .container-btn-cv .modal .modal-dialog .modal-content .modal-footer .btn-download a {
+  text-decoration: none;
+  color: #ffa726;
+  font-weight: 500;
+  transition: 1s;
+}
+.main-index .container-btn-cv .modal .modal-dialog .modal-content .modal-footer .btn-download a:visited {
+  color: #ffa726;
+}
+.main-index .container-btn-cv .modal .modal-dialog .modal-content .modal-footer .btn-download a:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: #1f2023;
+}
+.main-index .container-btn-cv .modal .modal-dialog .modal-content .modal-footer .btn-download a:hover:visited {
+  color: #1f2023;
 }
 
 /* MAIN HISTORY */
@@ -694,7 +709,7 @@ h1 {
 .body-contact {
   background: linear-gradient(to right, #1f2023, black);
 }
-.body-contact .main-contact section {
+.body-contact .main-contact section .form-contact {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -702,7 +717,7 @@ h1 {
   flex-direction: row;
   margin-bottom: 25px;
 }
-.body-contact .main-contact section .form-container {
+.body-contact .main-contact section .form-contact .form-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -711,7 +726,7 @@ h1 {
   width: 70%;
   padding: 15px;
 }
-.body-contact .main-contact section .form-container .submit-btn {
+.body-contact .main-contact section .form-contact .form-container .submit-btn {
   width: 100px;
   text-align: center;
   --color: #ffa726;
@@ -730,7 +745,7 @@ h1 {
   color: var(--color);
   z-index: 1;
 }
-.body-contact .main-contact section .form-container .submit-btn::before, .body-contact .main-contact section .form-container .submit-btn::after {
+.body-contact .main-contact section .form-contact .form-container .submit-btn::before, .body-contact .main-contact section .form-contact .form-container .submit-btn::after {
   content: "";
   display: block;
   width: 50px;
@@ -742,23 +757,23 @@ h1 {
   background-color: var(--color);
   transition: 1s ease;
 }
-.body-contact .main-contact section .form-container .submit-btn::before {
+.body-contact .main-contact section .form-contact .form-container .submit-btn::before {
   top: -1em;
   left: -1em;
 }
-.body-contact .main-contact section .form-container .submit-btn::after {
+.body-contact .main-contact section .form-contact .form-container .submit-btn::after {
   left: calc(100% + 1em);
   top: calc(100% + 1em);
 }
-.body-contact .main-contact section .form-container .submit-btn:hover {
+.body-contact .main-contact section .form-contact .form-container .submit-btn:hover {
   filter: brightness(0.8);
   color: rgb(10, 25, 30);
 }
-.body-contact .main-contact section .form-container .submit-btn:hover::before, .body-contact .main-contact section .form-container .submit-btn:hover::after {
+.body-contact .main-contact section .form-contact .form-container .submit-btn:hover::before, .body-contact .main-contact section .form-contact .form-container .submit-btn:hover::after {
   height: 410px;
   width: 410px;
 }
-.body-contact .main-contact section .form-container .input-group {
+.body-contact .main-contact section .form-contact .form-container .input-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -767,7 +782,7 @@ h1 {
   position: relative;
   padding: 10px;
 }
-.body-contact .main-contact section .form-container .input-group .input {
+.body-contact .main-contact section .form-contact .form-container .input-group .input {
   border: solid 1.5px #9e9e9e;
   border-radius: 1rem;
   width: 80%;
@@ -777,18 +792,18 @@ h1 {
   color: #f5f5f5;
   transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.body-contact .main-contact section .form-container .input-group .input:valid, .body-contact .main-contact section .form-container .input-group .input:focus {
+.body-contact .main-contact section .form-contact .form-container .input-group .input:valid, .body-contact .main-contact section .form-contact .form-container .input-group .input:focus {
   outline: none;
   border: 1.5px solid #ffa726;
 }
-.body-contact .main-contact section .form-container .input-group .input:valid ~ label, .body-contact .main-contact section .form-container .input-group .input:focus ~ label {
+.body-contact .main-contact section .form-contact .form-container .input-group .input:valid ~ label, .body-contact .main-contact section .form-contact .form-container .input-group .input:focus ~ label {
   transform: translateY(-50%) scale(0.8);
   background-color: rgba(20, 21, 23, 0.9333333333);
   padding: 0 0.2em;
   color: #ffa726;
   font-style: italic;
 }
-.body-contact .main-contact section .form-container .input-group .textarea-input {
+.body-contact .main-contact section .form-contact .form-container .input-group .textarea-input {
   border: solid 1.5px #9e9e9e;
   border-radius: 1rem;
   width: 80%;
@@ -798,18 +813,18 @@ h1 {
   color: #f5f5f5;
   transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.body-contact .main-contact section .form-container .input-group .textarea-input:valid, .body-contact .main-contact section .form-container .input-group .textarea-input:focus {
+.body-contact .main-contact section .form-contact .form-container .input-group .textarea-input:valid, .body-contact .main-contact section .form-contact .form-container .input-group .textarea-input:focus {
   outline: none;
   border: 1.5px solid #ffa726;
 }
-.body-contact .main-contact section .form-container .input-group .textarea-input:valid ~ label, .body-contact .main-contact section .form-container .input-group .textarea-input:focus ~ label {
+.body-contact .main-contact section .form-contact .form-container .input-group .textarea-input:valid ~ label, .body-contact .main-contact section .form-contact .form-container .input-group .textarea-input:focus ~ label {
   transform: translateY(-50%) scale(0.8);
   background-color: rgba(20, 21, 23, 0.9333333333);
   padding: 0 0.2em;
   color: #ffa726;
   font-style: italic;
 }
-.body-contact .main-contact section .form-container .input-group .user-label {
+.body-contact .main-contact section .form-contact .form-container .input-group .user-label {
   position: absolute;
   left: calc(12% + 8px);
   top: 8px;
