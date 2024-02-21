@@ -17,12 +17,14 @@
                 }
             }
             .button-icon {
-                &focus {
+                border: none;
+                &:focus {
                     box-shadow: none;
                 }
-                .nav-icon {
-                    background-image: url(./../images/hamburger-menu.svg);
-                }
+                .navbar-toggler-icon {
+                    color: #ffa726;
+                    background-image: url(./../../assets/images/hamburger-menu.svg);
+                }   
             }
             .menu {
                 flex-grow: 0;
