@@ -7,7 +7,7 @@
                 li {
                     .works-card {
                         @extend %bg-border;
-                        border: #ffb74d 2px solid;
+                        border: $works-color 2px solid;
                         .work-card-header {
                             img {
                                 padding: 25px;
@@ -15,17 +15,17 @@
                         }
                         .card-body {
                             .card-title {
-                                color: #ffb74d;
+                                color: $works-color;
                             }
                             .work-tech {
                                 font-size: 25px;
                                 padding: 15px;   
-                                color: #e0e0e0; 
+                                color: $white-color; 
                             }
                             .div-btn-works {
                                 a {
-                                    background-color: #1f2023;
-                                    color: #ffb74d;
+                                    background-color: $gray-background;
+                                    color: $works-color;
                                     border: black 2px solid;  
                                     font-weight: bold;
                                     border-radius: 0; 
